@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import "tailwindcss";
+@plugin "daisyui";
+
+@theme{
+  /* === light Mode ===  */
+  --color-primary: #3B71FE;
+  --color-text:#0E0E2C;
+  --color-gry: #A0A4AB;
+  --color-white: #FFFF;
+
+  /* === dark mode === */
+  --color-dark-main: #A0A4AB;
+
+  /* === font size === */
+  --text-one: 48px;
+  --text-two: 32px;
+  --text-three: 24px;
+  --text-four: 22px;
+  --text-meduin:18px;
+  --text-regular:16px;
+
+  --font-Poppins: "Poppins", sans-serif; 
+
+}
+
+body{
+  font-family: var(--font-Poppins);
+}
+
+@layer components{
+  
+  .active{
+    width: 28px;
+    height: 2px;
+    background-color: var(--color-primary);
+  }
+  .heading_one{
+    font-size: var(--text-one);
+    font-weight: bold;
+  }
+
+  .heading_two{
+    font-size: var(--text-two);
+    font-weight: bold;
+  }
+
+  .heading_three{
+    font-size: var(--text-three);
+    font-weight: bold;
+  }
+   
+  .heading_four{
+    font-size: var(--text-four);
+    font-weight: var(--font-weight-semibold)
+  }
+  .heading_meduim{
+    font-size: var(--text-meduin);
+    font-weight: var(--font-weight-medium);
+  }
+  .heading_regular{
+    font-size: var(--text-regular);
+    font-weight: var(--font-weight-normal);
+  }
+
+  .mobile_conteneur{
+    margin: 0 20px;
+  }
+
+
+}
+
+.desktop_conteneur{
+  margin: 0 150px;
+}
+
+
+
+
