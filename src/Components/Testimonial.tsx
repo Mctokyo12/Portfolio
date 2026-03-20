@@ -10,14 +10,14 @@ const Testimonial = memo(() => {
   return (
     <div className='my-40 bg-gry/15'>
         <div className='md:mx-37.5 mx-5 py-36'>
-            <div className='mb-11.5 w-177'>
+            <div className='mb-11.5 md:w-177'>
                 <h3 className='heading_three text-primary mb-9'>Testimonial</h3>
-                <span className='text-black heading_two dark:text-white '>You still hesitate about working with Us ? Check what They say about Us</span>
+                <span className='text-black heading_two dark:text-white text-wrap text-justify'>You still hesitate about working with Us ? Check what They say about Us</span>
             </div>
             
             <div className='flex flex-col md:flex-row gap-4 items-center w-full mx-auto mt-24  justify-around'>
                 {TestimonialData.map((item , index)=>(
-                    <div key={index} className='w-108.5'>
+                    <div key={index} className='md:w-108.5'>
                         <span className='heading_meduim text-black/80 mb-10 '>{item.text}</span>
                         <div className='flex items-start mt-10 gap-4'>
                             <img src={item.image} alt="" />

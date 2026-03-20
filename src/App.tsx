@@ -1,27 +1,19 @@
 import { useState } from 'react'
-import './App.css'
-import NavBar from './Components/NavBar'
-import Hero from './Components/Hero'
-import About from './Components/About'
-import My_Experience from './Components/My_Experience'
-import Service from './Components/Service'
-import Work from './Components/Work'
-import Testimonial from './Components/Testimonial'
-import Footer from './Components/Footer'
+import { Route, Routes } from 'react-router'
+import Home from './Pages/Home'
+import Abous_Us from './Pages/Abous_Us'
+import Services from './Pages/Services'
 
 function App() {
   
 
   return (
     <>
-      <NavBar/>
-      <Hero/>
-      <About/>
-      <My_Experience/>
-      <Service/>
-      <Work/>
-      <Testimonial/>
-      <Footer/>
+      <Routes>
+        <Route index element={<Home/>} />
+        <Route path='/about' element={<Abous_Us/>}/>
+        <Route path='/services' element={<Services/>}/>
+      </Routes>
     </>
   )
 }

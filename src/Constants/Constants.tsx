@@ -11,3 +11,10 @@ export interface CardInterface{
     title: string
     content: string
 }
+
+export interface CoreSkillInterface{
+    background: string
+    icon: string
+    title: string
+    content: string
+}

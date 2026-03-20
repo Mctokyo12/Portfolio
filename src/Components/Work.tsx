@@ -6,9 +6,9 @@ const Work = memo(() => {
   return (
     <div>
         <div className='md:mx-37.5 mx-5'>
-            <div className='mb-18 w-[569px]'>
+            <div className='mb-18 md:w-[569px]'>
                 <h3 className='heading_three text-primary'>The work that I realized</h3>
-                <span className='text-black heading_two dark:text-white '>The work we did that made our Client happy and satisfied</span>
+                <span className='text-black heading_two dark:text-white text-justify'>The work we did that made our Client happy and satisfied</span>
             </div>
             
             <div className=' grid md:grid-cols-3 grid-cols-1 gap-12 items-center mb-30 justify-between'>

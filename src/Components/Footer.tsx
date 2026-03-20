@@ -49,7 +49,7 @@ const Footer = memo(() => {
                     <div className='flex flex-col items-start'>
                         <h3 className='text-black dark:text-white heading_meduim mb-7'>Get in touch With Us</h3>
                         <ul className='flex flex-col gap-5 items-start'>
-                            <li className='heading_regular  text-black/80'>Need Answers ? Need help? just email us</li>
+                            <li className='heading_regular  text-black/80 text-wrap'>Need Answers ? Need help? just email us</li>
                             <li>
                                 <form action="">
                                     <div className='flex items-center justify-between rounded-lg border-2 border-gry p-4 w-63'>

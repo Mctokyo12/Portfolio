@@ -1,6 +1,7 @@
 import React from 'react'
 import { HiBars3BottomRight } from 'react-icons/hi2';
 import Button from './UI/Button';
+import { Link } from 'react-router';
 
 interface NavBarInterface {
     name?: string;
@@ -15,23 +16,23 @@ const NavBar = () => {
                 <h1 className=' text-primary heading_two'>Setup Ai</h1>
                 <ul className='items-center hidden md:flex justify-between  w-154.25  gap-4'>
                     <li className='flex flex-col'>
-                        <a href="" className=' text-[18px] text-text'>Home</a>
+                        <Link  to={"/"} className=' text-meduin text-text'>Home</Link>
                         <span className='active'></span>
                     </li>
                     <li className='flex flex-col'>
-                        <a href="" className=' text-[18px] text-text opacity-60'>Who we are ?</a>
+                        <Link to={"/about"} className=' text-meduin text-text opacity-60'>Who we are ?</Link>
                         <span className=''></span>
                     </li>
                     <li className='flex flex-col'>
-                        <a href="" className=' text-[18px] text-text opacity-60'>Our Services</a>
+                        <Link to={"/services"} className=' text-meduin text-text opacity-60'>Our Services</Link>
                         <span className=''></span>
                     </li>
                     <li className='flex flex-col'>
-                        <a href="" className=' text-[18px] text-text opacity-60'>Our Projects</a>
+                        <Link  to={"/projects"} className=' text-meduin text-text opacity-60'>Our Projects</Link>
                         <span className=''></span>
                     </li>
                     <li className='flex flex-col'>
-                        <a href="" className=' text-[18px] text-text opacity-60'>Contacts Us</a>
+                        <Link to={"/contacts"} className=' text-meduin text-text opacity-60'>Contacts Us</Link>
                         <span className=''></span>
                     </li>
                 </ul>
