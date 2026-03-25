@@ -23,12 +23,12 @@ const Hero = memo(() => {
           <span className='heading_four text-primary   '>Hello ,</span>
           <div className=' grid md:grid-cols-2  grid-cols-1  place-content-between'>
             
-            <div className='flex flex-col '>
+            <div className='flex flex-col ' data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
               <div className='md:w-[80%] '>
                 <h1 className='heading_one text-black dark:text-white text-justify md:py-14 py-8 '>
                   We Help People To Bring Their Ideas Alive
                 </h1>
-                <p className='heading_four text-gry w-full text-justify' >A talent team  to help you in your journey on creating useful and easy  to use product</p>
+                <p className='heading_three text-text/60 w-full text-justify' >A talent team  to help you in your journey on creating useful and easy  to use product</p>
               </div>
               
               <div className=' flex flex-col  md:flex-row  items-center mt-22   gap-5'>
@@ -46,7 +46,7 @@ const Hero = memo(() => {
               </div>
             </div>
 
-            <div className='hidden lg:block self-start  -mt-20 '>
+            <div className='hidden lg:block self-start  -mt-20 '  data-aos="fade-up" data-aos-duration="3000">
               <img src={Hero_Picture} alt="" className='w-full h-full' />
             </div>
           </div>

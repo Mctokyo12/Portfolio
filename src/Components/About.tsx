@@ -14,11 +14,11 @@ const About = memo(() => {
         <div className='md:mx-37.5 mx-5'>
             <h3 className='heading_three text-primary'>About</h3>
             <div className='flex flex-col  py-13 md:flex-row items-start gap-17 '>
-                <div className='md:w-[45%] w-full'>
+                <div className='md:w-[45%] w-full ' data-aos="zoom-in-right"  data-aos-duration="1000">
                     <img src={About_Picture} alt=""  className='hidden md:block w-full h-full' />
                     <img src={About_me} alt="" className='md:hidden h-full w-full ' />
                 </div>
-                <div className='md:w-[55%] w-full'>
+                <div className='md:w-[55%] w-full' data-aos="zoom-in-left" data-aos-duration="1000">
                     <div className='flex flex-row  items-start justify-center md:justify-start  gap-4 md:gap-16'>
                         <div className='flex  flex-col  shadow-2xl justify-between hover-3d hover:shadow-primary/60 transition-all duration-200 cursor-pointer items-center  rounded-xl py-11 px-0 w-57.5 h-58.5 bg-primary'>
                             <BsAward className='size-12.5 text-white'/>

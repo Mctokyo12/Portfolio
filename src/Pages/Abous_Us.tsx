@@ -21,13 +21,13 @@ const Abous_Us = memo(() => {
     <>
       <NavBar/>
       <div className='mt-28 md:mt-50  md:mx-37.5 mx-5'> 
-        <span className=' heading_two text-center  text-primary  w-full mb-12 block'>About Me</span>
+        <span className=' heading_two text-center  text-primary  w-full mb-12 block' data-aos="fade-up" data-aos-duration="3000">About Me</span>
         <div className='flex flex-col  py-13 md:flex-row items-start gap-17 '>
-          <div className='md:w-[40%] w-full'>
+          <div className='md:w-[40%] w-full' data-aos="fade-up" data-aos-duration="3000">
             <img src={About_Picture} alt=""  className='hidden md:block w-full h-full' />
             <img src={About_me} alt="" className='md:hidden h-full w-full ' />
           </div>
-          <div className='md:w-[55%] w-full'>
+          <div className='md:w-[55%] w-full' data-aos="fade-left">
             <h2 className="md:heading_one text-primary heading_two text-justify  ">The Architect of Intelligent & Scalable Ecosystems</h2>
             <div className=''>
               <p className='md:heading_meduim heading_four text-wrap  leading-10  text-black text-justify py-6'>
@@ -53,10 +53,10 @@ const Abous_Us = memo(() => {
         <div className='my-32'>
           <h3 className='heading_three text-primary'>My Core Pillars of Expertise</h3>
           <div className='flex md:flex-row flex-col  items-center '>
-            <div className='md:w-[40%]'>
+            <div className='md:w-[40%]' data-aos="zoom-in-right"  data-aos-duration="1000">
               <img src={Skill} alt="" />
             </div>
-            <div className='md:w-[60%]'>
+            <div className='md:w-[60%]' data-aos="zoom-in-left" data-aos-duration="1000">
               <span className='heading_three text-primary hidden md:block '>My Technical Expertise</span>
               <div className='w-full h-0 border-2 border-primary hidden md:block'></div>
               <div className='mt-4 flex flex-wrap items-center  gap-y-4 gap-x-2'>

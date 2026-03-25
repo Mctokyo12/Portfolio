@@ -18,7 +18,7 @@ const Projects = memo(() => {
         <NavBar/>
         <div className='mt-28 md:mt-50  md:mx-37.5 mx-5'>
             <div className=' flex justify-center items-center w-full my-30'>
-                <div className='flex flex-col gap-12 items-center  w-3xl  text-center'>
+                <div className='flex flex-col gap-12 items-center  w-3xl  text-center' data-aos="fade-up" data-aos-duration="3000">
                     <span className=' heading_two text-center  text-primary  w-full'>Our Projects</span>
                     <h1 className='heading_one text-black'>Project We Realised</h1>
                     <span className='text-text/60 text-2xl'>
@@ -33,12 +33,12 @@ const Projects = memo(() => {
                 </div>
             </div>
             
-            <div id='Project' className=''>
+            <div id='Project' className='' data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
 
                 {MyWork.slice(0,size).map(({Programming , App , img , content , link} , index)=>(
 
                     <div key={index} className={`flex items-start    mb-16   max-md:flex-col  md:justify-between ${index % 2 == 0 ? " md:flex-row-reverse" : ""} `}>
-                        <div className=' flex flex-col  mt-4 md:w-[40%]'>
+                        <div className=' flex flex-col  mt-4 md:w-[40%]' data-aos="fade-right">
                             <span className='heading_three text-primary mb-4'>{Programming}</span>
                             <div className='flex  flex-col'>
                                 <h3 className=' font-bold text-[40px] text-black'>{App}</h3>
@@ -52,7 +52,7 @@ const Projects = memo(() => {
                             </div>
                         </div>
 
-                        <div className=' md:w-[50%]'>
+                        <div className=' md:w-[50%]' data-aos="fade-left">
                             <img src={img} alt=""  />
                             <Link to={link} target='_blank'>
                                 <div className='md:hidden block text-center mt-16'>

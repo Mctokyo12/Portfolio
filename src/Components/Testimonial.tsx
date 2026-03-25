@@ -1,5 +1,5 @@
 import React, { memo, useState } from 'react'
-import { TestimonialData } from '../Data/Testimonial'
+import { TestimonialData, Testimonials } from '../Data/Testimonial'
 
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Pagination, Scrollbar, A11y , EffectFade } from 'swiper/modules';
@@ -17,7 +17,7 @@ const Testimonial = memo(() => {
   return (
     <div className='my-40 bg-gry/7 shadow z-10 '>
         <div className='md:mx-37.5 mx-5 py-36'>
-            <div className='mb-11.5 md:w-177'>
+            <div className='mb-11.5 md:w-177' data-aos="zoom-in">
                 <h3 className='heading_three text-primary mb-9'>Testimonial</h3>
                 <span className='text-black heading_two dark:text-white text-wrap text-justify'>You still hesitate about working with Us ? Check what They say about Us</span>
             </div>
@@ -37,9 +37,9 @@ const Testimonial = memo(() => {
                     effect="flip"
                     
                 >
-                    {TestimonialData.map((item , index)=>(
-                        <SwiperSlide key={index} className='py-16 w-full '>
-                            <div className="flex flex-col items-center text-center gap-10">
+                    {Testimonials.map((item , index)=>(
+                        <SwiperSlide key={index} className='py-16 w-full ' >
+                            <div className="flex flex-col items-center text-center gap-10" data-aos="zoom-in-up" data-aos-duration="00">
                     
                                 <p className="origin-bottom text-display-sm  font-serif italic font-medium text-balance text-text  text-3xl md:text-5xl  will-change-transform md:text-display-md">
                                     {item.text}
@@ -49,7 +49,7 @@ const Testimonial = memo(() => {
                                         <img src={item.image} alt={item.name} className="w-32 h-32 rounded-full border-5 border-gry" />
                                         <div className="flex flex-col gap-1">
                                             <p className="text-2xl font-semibold text-primary">{item.name}</p>
-                                            <cite className="text-xl text-tertiary not-italic">{item.position}</cite>
+                                            <cite className="text-xl text-tertiary not-italic">{item.title}</cite>
                                         </div>
                                        
                                     </div>

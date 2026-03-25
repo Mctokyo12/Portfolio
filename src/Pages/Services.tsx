@@ -34,7 +34,7 @@ const Services = memo(() => {
       <NavBar/>
         <div className='mt-28 md:mt-50 z-10  md:mx-37.5 mx-5'>
             <div className=' flex justify-center items-center w-full my-30'>
-                <div className='flex flex-col gap-12 items-center  md:w-3xl  text-center'>
+                <div className='flex flex-col gap-12 items-center  md:w-3xl  text-center' data-aos="fade-up">
                     <span className=' heading_two text-center  text-primary  w-full'>Our Services</span>
                     <h1 className='heading_one text-black'>Services We Offres</h1>
                     <span className='text-text/60 text-2xl'>
@@ -57,7 +57,7 @@ const Services = memo(() => {
                 </div>
             </div>
 
-            <div className=''>
+            <div className='' data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
                 <span className='heading_three text-primary'>Our Process</span>
                 <div className='flex  flex-col md:flex-row gap-10 md:justify-baseline items-center md:gap-80 mt-10'>
                     <h2 className='text-[40px] text-black font-bold w-full md:w-127'>I Work Process help you to get the best from my skill </h2>
@@ -65,7 +65,7 @@ const Services = memo(() => {
                 </div>
             </div>
 
-            <div className='grid md:grid-cols-3 grid-cols-1 md:mt-40 mt-16  gap-12  md:gap-43.75 items-center relative'>
+            <div className='grid md:grid-cols-3 grid-cols-1 md:mt-40 mt-16  gap-12  md:gap-43.75 items-center relative' data-aos="fade-up" data-aos-duration="3000">
                 <Process 
                     index={1} 
                     title='Discovery' 
@@ -128,7 +128,7 @@ const Services = memo(() => {
                 >
                     {OurService.map(({title , content , img} , index)=>(
                         <SwiperSlide key={index}>
-                            <div id='OurService'  className='flex flex-col md:flex-row md:items-center md:w-[90%] md:mx-auto max-md:gap-12  max-md:mt-12  justify-between '>
+                            <div id='OurService'  data-aos="zoom-in-left" className='flex flex-col md:flex-row md:items-center md:w-[90%] md:mx-auto max-md:gap-12  max-md:mt-12  justify-between '>
                                 <div className='md:w-[40%]'>
                                     <h3 className=' font-bold text-[34px] mb-4 text-black'>{title}</h3>
                                     <span className=' text-xl md:w-[40%]  text-justify text-text/60'>

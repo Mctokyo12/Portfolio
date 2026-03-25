@@ -24,7 +24,7 @@ const Contacts = memo(() => {
                 <img src={Vector_6} alt=""  className='w-full h-365.84px' />
             </div>
             <div className=' z-10 flex justify-center items-center w-full my-26'>
-                <div className='flex flex-col gap-6 items-center  w-3xl  text-center'>
+                <div className='flex flex-col gap-6 items-center  w-3xl  text-center' data-aos="fade-up">
                     <span className=' heading_two max-md:heading_three  text-center   text-primary  w-full'>Let’s Have a chat</span>
                     <h1 className='heading_one max-md:heading_two text-black text-justify -mt-4'>An expert at your services</h1>
                     <div>
@@ -94,7 +94,7 @@ const Contacts = memo(() => {
             </div>
 
             <div className=' flex flex-col max-md:w-full  gap-16 md:flex-row justify-between'>
-                <div className='md:w-162.5 w-full'>
+                <div className='md:w-162.5 w-full' data-aos="fade-right">
                     <h3 className='heading_four text-primary mb-8'>FAQ</h3>
                     <span className=' font-bold md:text-one text-[40px] text-justify'>
                         Here are Some Answer For  Frequntly asked Questions
@@ -103,7 +103,7 @@ const Contacts = memo(() => {
                         We got a lot of Message With the same Questions so here are some fast answer for populare Question
                     </p>
                 </div>
-                <div className='flex flex-col gap-8'>
+                <div className='flex flex-col gap-8' data-aos="fade-left">
                     {
                         FAQ.map(({question , answer} , index)=>(
                             <div key={index} className='p-4  md:w-180 w-full border-primary border-2'>
