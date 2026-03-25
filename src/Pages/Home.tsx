@@ -7,6 +7,7 @@ import Service from './../Components/Service'
 import Work from './../Components/Work'
 import Testimonial from './../Components/Testimonial'
 import Footer from './../Components/Footer'
+import { TestimonialSimpleCentered01 } from '../Components/OtherTest'
 
 const Home = memo(() => {
   return (

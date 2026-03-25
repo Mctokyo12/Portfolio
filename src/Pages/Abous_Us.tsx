@@ -12,9 +12,11 @@ import programming from './../assets/images/programming.svg'
 import server from './../assets/images/server.svg'
 import Testimonial from '../Components/Testimonial'
 import Footer from '../Components/Footer'
+import { Link } from 'react-router'
+import { useMediaQuery } from 'react-responsive'
 
 const Abous_Us = memo(() => {
-
+  const isTableOrMobile = useMediaQuery({query: '(max-width:768px)'})
   return (
     <>
       <NavBar/>
@@ -26,17 +28,22 @@ const Abous_Us = memo(() => {
             <img src={About_me} alt="" className='md:hidden h-full w-full ' />
           </div>
           <div className='md:w-[55%] w-full'>
-            <h2 className="heading_one text-primary ">The Architect of Intelligent & Scalable Ecosystems</h2>
+            <h2 className="md:heading_one text-primary heading_two text-justify  ">The Architect of Intelligent & Scalable Ecosystems</h2>
             <div className=''>
               <p className='md:heading_meduim heading_four text-wrap  leading-10  text-black text-justify py-6'>
                 As a Software Engineer, I am passionate about crafting intelligent and scalable ecosystems that drive innovation and efficiency. With expertise in software development, artificial intelligence, cloud operations, and networking & security, I specialize in building robust solutions that empower businesses to thrive in the digital age. My commitment to excellence and continuous learning fuels my dedication to delivering cutting-edge technology solutions that make a meaningful impact.
               </p>
               <div className=' flex flex-col  md:flex-row  items-center   gap-5'>
-                <Button name={"Let's Talk"}  icon={FiMessageSquare}  outline={false}/>
-                <div className=' flex items-center gap-2'>
-                  <span className='heading_meduim dark:text-white'>Check Our Services</span>
-                  <FiArrowRight  className='text-primary size-6'/>
-                </div>
+                <Link to={"/contacts"} className='max-md:w-full'>
+                  <Button name={"Let's Talk"}  icon={FiMessageSquare}  outline={false} ismobile={isTableOrMobile}/>
+                </Link>
+                <Link to={"/services"}>
+
+                  <div className=' flex items-center gap-2'>
+                    <span className='heading_meduim dark:text-white'>Check Our Services</span>
+                    <FiArrowRight  className='text-primary size-6'/>
+                  </div>
+                </Link>
               </div>
 
             </div>

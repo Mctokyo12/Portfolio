@@ -1,13 +1,14 @@
 import React, { memo } from 'react'
 import { BiSend } from 'react-icons/bi'
 import { FaFacebook, FaInstagram, FaTwitch, FaTwitter } from 'react-icons/fa'
+import { Link } from 'react-router'
 
 const Footer = memo(() => {
   return (
     <div className='bg-gry/15'>
         <div className='md:mx-37.5 mx-5 py-36'>
-            <div className='flex items-start justify-around'>
-                <div className='w-[45%] flex  items-start gap-20'>
+            <div className='flex flex-col md:flex-row items-start justify-around'>
+                <div className='md:w-[45%] flex  items-start gap-20'>
                     <div className='mb-11.5'>
                         <h3 className='heading_three text-primary  mb-7'>SetupAI</h3>
                         <span className='text-black/80 heading_four '>SetupAI is a digital agencay that create User centred Product that help her client to evolve</span>

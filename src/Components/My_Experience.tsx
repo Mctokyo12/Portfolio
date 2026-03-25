@@ -11,10 +11,10 @@ const My_Experience = memo(() => {
     <div className='mt-18 md:mt-0'>
       <div className='md:mx-37.5 mx-5'>
           <h3 className='heading_three text-primary'>My Experience</h3>
-          <div className='w-[80%] mx-auto place-content-center  grid grid-cols-1 md:grid-cols-3 gap-7 mt-12.5'>
+          <div className='md:w-[80%]  w-full mx-auto place-content-center  grid grid-cols-1 md:grid-cols-3 gap-7 mt-12.5'>
             
             {/* Programing */}
-            <div className='flex flex-col shadow-2xl cursor-pointer  items-start gap-3  w-full  pt-5 px-8 pb-16  h-[531px] rounded-xl bg-primary text-white  '>
+            <div className='flex flex-col  shadow-2xl/65 shadow-primary cursor-pointer hover:shadow-primary/80 hover:-translate-y-4 transition-all duration-75   items-start gap-3  w-full  pt-5 px-8 pb-16  h-[531px] rounded-xl from-primary to-secondary bg-linear-to-t  text-white  '>
               <div className='flex flex-col  items-center w-full mb-8'>
                 <div className=' mb-8'>
                   <img src={Project} alt=""  />
@@ -44,7 +44,7 @@ const My_Experience = memo(() => {
 
 
             {/* AI & Data Engineering */}
-            <div className='flex flex-col shadow-2xl cursor-pointer items-start gap-3  w-full  pt-5 px-8 pb-16  h-[531px] rounded-xl bg-primary text-white  grow-0  order-0  flex-none'>
+            <div className='flex flex-col shadow-2xl/65 shadow-primary cursor-pointer items-start gap-3  hover:shadow-primary/80 hover:-translate-y-4 transition-all duration-75  w-full  pt-5 px-8 pb-16  h-[531px] rounded-xl from-primary to-green-500 bg-linear-to-t text-white  grow-0  order-0  flex-none'>
               <div className='flex flex-col items-center w-full mb-8'>
                 <div className=' mb-8'>
                   <img src={Ai} alt=""  />
@@ -73,7 +73,7 @@ const My_Experience = memo(() => {
             </div>
 
             {/* Cloud & Devops */}
-            <div className='flex flex-col shadow-2xl cursor-pointer  items-start gap-3   w-full pt-5 px-8 pb-16  h-[531px] rounded-xl bg-primary text-white  grow-0  order-0  flex-none'>
+            <div className='flex flex-col shadow-2xl/65 shadow-primary cursor-pointer hover:shadow-primary/80 hover:-translate-y-4 transition-all duration-75   items-start gap-3   w-full pt-5 px-8 pb-16   h-[531px] rounded-xl from-primary to-yellow-500 bg-linear-to-t text-white  grow-0  order-0  flex-none'>
               <div className=' flex flex-col items-center w-full mb-8'>
                 <div className=' mb-8'>
                   <img src={Cloud} alt=""  />

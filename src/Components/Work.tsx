@@ -2,6 +2,7 @@ import React, { memo } from 'react'
 import { ProjectData } from '../Data/work'
 import Button from './UI/Button'
 import { FiChevronRight } from "react-icons/fi";
+import { Link } from 'react-router';
 const Work = memo(() => {
   return (
     <div>
@@ -25,7 +26,9 @@ const Work = memo(() => {
                 ))}
             </div>
             <div className='w-full text-center'>
-                <Button name='Explore More Projects'  icon={FiChevronRight} outline={false}/>
+                <Link to={"/projects"}>
+                    <Button name='Explore More Projects'  icon={FiChevronRight} outline={false}/>
+                </Link>
             </div>
 
         

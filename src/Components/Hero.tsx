@@ -3,8 +3,14 @@ import { FiArrowRight, FiMessageSquare } from 'react-icons/fi'
 import Button from './UI/Button'
 import Hero_Picture from './../assets/images/Hero_picture.svg';
 import Vector from './../assets/images/Vector.svg'
+import { Link } from 'react-router';
+import { useMediaQuery } from 'react-responsive';
 
 const Hero = memo(() => {
+  const isTableOrMobile = useMediaQuery({query: '(max-width:768px)'})
+
+
+
   return (
     <header className='md:h-174.5  h-158  mt-28 md:mt-50  '>
 
@@ -26,13 +32,17 @@ const Hero = memo(() => {
               </div>
               
               <div className=' flex flex-col  md:flex-row  items-center mt-22   gap-5'>
+                <Link to={"/contacts"} className='max-md:w-full'>
+                  <Button name={"Let's Talk"}  icon={FiMessageSquare}  outline={false} ismobile={isTableOrMobile} />
+                </Link>
               
-                <Button name={"Let's Talk"}  icon={FiMessageSquare}  outline={false}/>
-              
-                <div className=' flex items-center gap-2'>
-                  <span className='heading_meduim dark:text-white'>Check Our Services</span>
-                  <FiArrowRight className='text-primary size-6'/>
-                </div>
+                <Link to={"/services"}>
+                  <div className=' flex items-center gap-2'>
+                    <span className='heading_meduim dark:text-white'>Check Our Services</span>
+                    <FiArrowRight className='text-primary size-6'/>
+                  </div>
+                </Link>
+
               </div>
             </div>
 

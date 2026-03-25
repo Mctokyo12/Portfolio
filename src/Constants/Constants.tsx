@@ -10,6 +10,7 @@ export interface ButtonInterface{
 export interface CardInterface{
     title: string
     content: string
+    link: string
 }
 
 export interface CoreSkillInterface{

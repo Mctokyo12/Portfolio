@@ -14,8 +14,8 @@ const Service = memo(() => {
                     I offer I variety service  to help you and grow and build your brand and help you with developing your product
                 </p>
                 {
-                    ServiceData.map(({title , content} , index)=>(
-                        <Card  title={title} content={content}  key={index}/>
+                    ServiceData.map(({title , content , link} , index)=>(
+                        <Card  title={title} content={content}  link={link} key={index}/>
                     ))
                 }
             </div>

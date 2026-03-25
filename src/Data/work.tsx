@@ -31,7 +31,7 @@ export const ProjectData = [
     {
         Programming: "Software Developement",
         App: "AI Player",
-        img:Lecteur_Video
+        img: Lecteur_Video
     },
    
 ]
