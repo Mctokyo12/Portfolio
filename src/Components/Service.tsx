@@ -15,7 +15,7 @@ const Service = memo(() => {
                 </p>
                 {
                     ServiceData.map(({title , content , link} , index)=>(
-                        <Card  title={title} content={content}  link={link} key={index}/>
+                        <Card  title={title} content={content}   link={link} key={index}/>
                     ))
                 }
             </div>

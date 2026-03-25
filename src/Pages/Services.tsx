@@ -111,7 +111,7 @@ const Services = memo(() => {
 
 
 
-            <div className='md:mt-36 md:py-38 max-md:pt-32 '>
+            <div  className='md:mt-36 md:py-38 max-md:pt-32 '>
                 <span className='text-three font-semibold text-primary '>Our Services</span>
                 <Swiper
                     spaceBetween={50}
@@ -128,7 +128,7 @@ const Services = memo(() => {
                 >
                     {OurService.map(({title , content , img} , index)=>(
                         <SwiperSlide key={index}>
-                            <div  className='flex flex-col md:flex-row md:items-center md:w-[90%] md:mx-auto max-md:gap-12  max-md:mt-12  justify-between '>
+                            <div id='OurService'  className='flex flex-col md:flex-row md:items-center md:w-[90%] md:mx-auto max-md:gap-12  max-md:mt-12  justify-between '>
                                 <div className='md:w-[40%]'>
                                     <h3 className=' font-bold text-[34px] mb-4 text-black'>{title}</h3>
                                     <span className=' text-xl md:w-[40%]  text-justify text-text/60'>

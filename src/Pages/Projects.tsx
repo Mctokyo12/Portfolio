@@ -33,7 +33,7 @@ const Projects = memo(() => {
                 </div>
             </div>
             
-            <div className=''>
+            <div id='Project' className=''>
 
                 {MyWork.slice(0,size).map(({Programming , App , img , content , link} , index)=>(
 

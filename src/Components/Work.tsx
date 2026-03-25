@@ -26,7 +26,7 @@ const Work = memo(() => {
                 ))}
             </div>
             <div className='w-full text-center'>
-                <Link to={"/projects"}>
+                <Link to={"/projects#Project"}>
                     <Button name='Explore More Projects'  icon={FiChevronRight} outline={false}/>
                 </Link>
             </div>
