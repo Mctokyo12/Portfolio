@@ -36,12 +36,12 @@ const Services = memo(() => {
   return (
     <>
       <NavBar/>
-        <div className='mt-28 md:mt-50 z-10  md:mx-37.5 mx-5'>
+        <div className='mt-28 md:mt-28 z-10  md:mx-37.5 mx-5'>
             <div className=' flex justify-center items-center w-full my-30'>
                 <div className='flex flex-col gap-12 items-center  md:w-3xl  text-center' data-aos="fade-up">
                     <span className=' heading_two text-center  text-primary  w-full'>Our Services</span>
                     <h1 className='heading_one text-black'>Services We Offres</h1>
-                    <span className='text-text/60 text-2xl'>
+                    <span className='text-text/60 text-four'>
                         We don’t just offer services; we build interconnected ecosystems. From the foundational network to the intelligent application layer, we cover the entire technological stack.
                     </span>
 
@@ -63,9 +63,9 @@ const Services = memo(() => {
 
             <div className='' data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
                 <span className='heading_three text-primary'>Our Process</span>
-                <div className='flex  flex-col md:flex-row gap-10 md:justify-baseline items-center md:gap-80 mt-10'>
-                    <h2 className='text-[40px] text-black font-bold w-full md:w-127'>I Work Process help you to get the best from my skill </h2>
-                    <span className=' text-text/60 self-start  text-2xl md:w-138'>From concept to deployment a streamlined approach to complex engineering.</span>
+                <div className='flex  flex-col md:flex-row gap-10 md:justify-between items-center  mt-10'>
+                    <h2 className='text-[40px] text-black font-bold w-full md:w-127 md:h-45'>I Work Process help you to get the best from my skill </h2>
+                    <span className=' text-text/60 self-start  text-four md:w-138'>From concept to deployment a streamlined approach to complex engineering.</span>
                 </div>
             </div>
 
@@ -104,11 +104,11 @@ const Services = memo(() => {
                     content=' Automated launch via CI/CD pipelines and containerization (Docker/Kubernetes) for high availability and zero downtime.' 
                 />
 
-                <img src={Vector_2} alt=""  className='absolute left-232 top-40 hidden md:block' />
-                <img src={Vector_3} alt="" className='absolute left-70 -top-28 hidden md:block'  />
-                <img src={Vector_4} alt="" className='absolute left-75  top-66 hidden md:block'/>
-                <img src={Vector_5} alt="" className='absolute  right-124 -bottom-27 hidden md:block' />
-                <img src={Vector_3_1} alt=""  className='absolute right-8 top-26 hidden md:block '/>
+                <img src={Vector_2} alt=""  className='absolute left-150 top-60 hidden md:block' />
+                <img src={Vector_3} alt="" className='absolute left-30 -top-28 hidden md:block'  />
+                <img src={Vector_4} alt="" className='absolute left-48  top-66 hidden md:block'/>
+                <img src={Vector_5} alt="" className='absolute  right-28 -bottom-27 hidden md:block' />
+                <img src={Vector_3_1} alt=""  className='absolute -right-38 top-38 hidden md:block '/>
 
                 
             </div>
@@ -134,8 +134,8 @@ const Services = memo(() => {
                         <SwiperSlide key={index} className="max-md:mb-6">
                             <div id='OurService'  data-aos="zoom-in-left" className='flex flex-col md:flex-row md:items-center md:w-[90%] md:mx-auto max-md:gap-12  max-md:mt-12  justify-between '>
                                 <div className='md:w-[40%]'>
-                                    <h3 className=' font-bold text-[34px] mb-4 text-black'>{title}</h3>
-                                    <span className=' text-xl md:w-[40%]  text-justify text-text/60'>
+                                    <h3 className=' font-bold text-[28px] mb-4 text-black'>{title}</h3>
+                                    <span className=' heading_regular md:w-[40%]  text-justify text-text/60'>
                                         {content}
                                     </span>
                                 </div>

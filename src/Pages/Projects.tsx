@@ -15,12 +15,12 @@ const Projects = memo(() => {
   return (
     <>
         <NavBar/>
-        <div className='mt-28 md:mt-50  md:mx-37.5 mx-5'>
+        <div className='mt-28 md:mt-28  md:mx-37.5 mx-5'>
             <div className=' flex justify-center items-center w-full my-30'>
                 <div className='flex flex-col gap-12 items-center  w-3xl  text-center' data-aos="fade-up" data-aos-duration="3000">
                     <span className=' heading_two text-center  text-primary  w-full'>Our Projects</span>
                     <h1 className='heading_one text-black'>Project We Realised</h1>
-                    <span className='text-text/60 text-2xl'>
+                    <span className='text-text/60 text-four'>
                         From the initial line of code to automated cloud deployment, I build digital products that bridge the gap between complex algorithms and seamless user experiences. Here is a showcase of my journey across Web Development, AI, and Systems Architecture
                     </span>
 

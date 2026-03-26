@@ -20,7 +20,7 @@ const Abous_Us = memo(() => {
   return (
     <>
       <NavBar/>
-      <div className='mt-28 md:mt-50  md:mx-37.5 mx-5'> 
+      <div className='mt-28 md:mt-28  md:mx-37.5 mx-5'> 
         <span className=' heading_two text-center  text-primary  w-full mb-12 block' data-aos="fade-up" data-aos-duration="3000">About Me</span>
         <div className='flex flex-col  py-13 md:flex-row items-start gap-17 '>
           <div className='md:w-[40%] w-full' data-aos="fade-up" data-aos-duration="3000">
@@ -28,9 +28,9 @@ const Abous_Us = memo(() => {
             <img src={About_me} alt="" className='md:hidden h-full w-full ' />
           </div>
           <div className='md:w-[55%] w-full' data-aos="fade-left">
-            <h2 className="md:heading_one text-primary heading_two text-justify  ">The Architect of Intelligent & Scalable Ecosystems</h2>
+            <h2 className=" text-primary heading_two text-justify  ">The Architect of Intelligent & Scalable Ecosystems</h2>
             <div className=''>
-              <p className='md:heading_meduim heading_four text-wrap  leading-10  text-black text-justify py-6'>
+              <p className='md:heading_meduim max-md:heading_meduim text-wrap    text-black text-justify py-6'>
                 As a Software Engineer, I am passionate about crafting intelligent and scalable ecosystems that drive innovation and efficiency. With expertise in software development, artificial intelligence, cloud operations, and networking & security, I specialize in building robust solutions that empower businesses to thrive in the digital age. My commitment to excellence and continuous learning fuels my dedication to delivering cutting-edge technology solutions that make a meaningful impact.
               </p>
               <div className=' flex flex-col  md:flex-row  items-center   gap-5'>
@@ -50,19 +50,19 @@ const Abous_Us = memo(() => {
           </div>
         </div>
 
-        <div className='my-32'>
+        <div className='my-24'>
           <h3 className='heading_three text-primary'>My Core Pillars of Expertise</h3>
-          <div className='flex md:flex-row flex-col  items-center '>
-            <div className='md:w-[40%]' data-aos="zoom-in-right"  data-aos-duration="1000">
+          <div className='flex md:flex-row  justify-between flex-col  relative items-center '>
+            <div className='md:w-[45%] ' data-aos="zoom-in-right"  data-aos-duration="1000">
               <img src={Skill} alt="" />
             </div>
-            <div className='md:w-[60%]' data-aos="zoom-in-left" data-aos-duration="1000">
+            <div className='md:w-[55%] ' data-aos="zoom-in-left" data-aos-duration="1000">
               <span className='heading_three text-primary hidden md:block '>My Technical Expertise</span>
               <div className='w-full h-0 border-2 border-primary hidden md:block'></div>
-              <div className='mt-4 flex flex-wrap items-center  gap-y-4 gap-x-2'>
-                <CoreSkill background='3B71FE' icon={programming} title='Software Development' content='I excel in designing and implementing robust software solutions using modern programming languages and frameworks.' />
-                <CoreSkill background='34c759' icon={ai_svg} title='Artificial Intelligence' content='I leverage machine learning and AI techniques to build intelligent systems that can learn and adapt.' />
-                <CoreSkill background='6155F5' icon={googlecloud} title='Cloud Operations' content='I specialize in deploying and managing scalable cloud infrastructure to ensure high availability and performance.' />
+              <div className='mt-4  grid md:grid-cols-2   grid-cols-1  items-center  gap-y-2  gap-x-4'>
+                <CoreSkill background='3B71FE' icon={programming} title='Software Development' content='Building high-performance applications with a focus on clean architecture and seamless UX.' />
+                <CoreSkill background='34c759' icon={ai_svg} title='Artificial Intelligence' content='Integrating LLMs, predictive modeling, and data pipelines into functional products.' />
+                <CoreSkill background='6155F5' icon={googlecloud} title='Cloud Operations' content='Automating lifecycles (CI/CD), containerization (Kubernetes), and managing scalable Cloud environments(AWS/Azure).' />
                 <CoreSkill background='FF8D28' icon={server} title='Networking & Security' content='I have a strong foundation in networking principles and security best practices to build secure and reliable systems.' />
               </div>
             </div>

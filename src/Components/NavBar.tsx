@@ -43,16 +43,16 @@ const NavBar = () => {
 
 
   return (
-    <nav className='w-full h-20 fixed top-0  z-30 left-0 bg-white shadow dark:bg-dark-main'>
+    <nav className='w-full h-15 fixed top-0  z-30 left-0 bg-white shadow dark:bg-dark-main'>
         <div className='md:mx-37.5 mx-5'>
-            <div className='flex items-center  h-20 justify-between'>
+            <div className='flex items-center   h-15 justify-between'>
                 <h1 className=' text-primary heading_two'>Setup Ai</h1>
-                <ul className={`md:items-center  md:flex justify-between  w-154.25  md:gap-4  max-md:absolute max-md:top-20 max-md:left-0 max-md:w-full max-md:shadow-xl max-md:bg-white max-md:flex max-md:flex-col  max-md:items-center  max-md:gap-10  max-md:py-5  max-md:px-5  ${isvisible ? "max-md:flex" : "max-md:hidden"} `}>
+                <ul className={`md:items-center  md:flex md:justify-between  w-154.25    max-md:absolute max-md:top-20 max-md:left-0 max-md:w-full max-md:shadow-xl max-md:bg-white max-md:flex max-md:flex-col  max-md:items-center  max-md:gap-10  max-md:py-5  max-md:px-5  ${isvisible ? "max-md:flex" : "max-md:hidden"} `}>
                     {NavBarData.map(({name,link} , index) =>{
                         const isActive  = location.pathname === link
                         return (
                             <li className='flex  flex-col' key={index}>
-                                <Link  to={link} className=' text-meduin  text-text'>{name}</Link>
+                                <Link  to={link} className={`heading_regular  ${isActive? "text-text" : "text-text/60" } `}>{name}</Link>
                                 <span className={`${isActive? "active" : "" } `}></span>
                             </li>
                         )

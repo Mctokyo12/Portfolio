@@ -41,7 +41,7 @@ const Testimonial = memo(() => {
                         <SwiperSlide key={index} className='py-16 w-full ' >
                             <div className="flex flex-col items-center text-center gap-10" data-aos="zoom-in-up" data-aos-duration="00">
                     
-                                <p className="origin-bottom text-display-sm  font-serif italic font-medium text-balance text-text  text-3xl md:text-5xl  will-change-transform md:text-display-md">
+                                <p className="origin-bottom text-display-sm  font-serif italic font-medium text-balance text-text  text-2xl md:text-[26px]  will-change-transform md:text-display-md">
                                     {item.text}
                                 </p>
                                 <div className="flex origin-bottom flex-col items-center gap-4 will-change-transform">

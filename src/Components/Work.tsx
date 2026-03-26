@@ -14,7 +14,7 @@ const Work = memo(() => {
             
             <div className=' grid md:grid-cols-3 grid-cols-1 gap-12 items-center mb-30 justify-between' data-aos="zoom-out-up" data-aos-duration="2000">
                 {ProjectData.map(({Programming , App , img} , index)=>(
-                    <div key={index} className={`${index == 2 && "md:row-span-2"}`}>
+                    <div key={index} className={`${index == 2 && "md:row-span-2 "}`}>
                         <div className={`w-full rounded-4xl `}>
                             <img src={img}  />
                         </div>
