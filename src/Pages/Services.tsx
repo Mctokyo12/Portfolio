@@ -127,7 +127,7 @@ const Services = memo(() => {
                     
                 >
                     {OurService.map(({title , content , img} , index)=>(
-                        <SwiperSlide key={index}>
+                        <SwiperSlide key={index} className="max-md:mb-6">
                             <div id='OurService'  data-aos="zoom-in-left" className='flex flex-col md:flex-row md:items-center md:w-[90%] md:mx-auto max-md:gap-12  max-md:mt-12  justify-between '>
                                 <div className='md:w-[40%]'>
                                     <h3 className=' font-bold text-[34px] mb-4 text-black'>{title}</h3>
