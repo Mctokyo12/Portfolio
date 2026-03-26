@@ -1,9 +1,9 @@
-import React, { memo, useState } from 'react'
+import { memo, useState } from 'react'
 import NavBar from '../Components/NavBar'
 import Footer from '../Components/Footer'
 import Testimonial from '../Components/Testimonial'
 import Button from '../Components/UI/Button'
-import { FiMessageSquare , FiChevronRight } from 'react-icons/fi'
+import { FiChevronRight } from 'react-icons/fi'
 import Vector_6 from "./../assets/images/Vector_6.svg"
 import { FaMinus, FaPlus } from 'react-icons/fa'
 import { useForm, ValidationError } from '@formspree/react';
@@ -15,7 +15,6 @@ const Contacts = memo(() => {
     const [current , setCurrent] = useState<number|null>(null);
 
   return (
-
     <>
         <NavBar/>
         <div className='mt-28 md:mt-24 z-10    md:mx-37.5 mx-5'>
@@ -121,13 +120,6 @@ const Contacts = memo(() => {
 
             </div>
             
-
-
-
-
-
-
-
         </div>
         <Testimonial/>
         <Footer/>

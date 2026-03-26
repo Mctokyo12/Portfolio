@@ -1,6 +1,6 @@
-import React, { memo } from 'react'
+import { memo } from 'react'
 import { BiSend } from 'react-icons/bi'
-import { FaFacebook, FaInstagram, FaTwitch, FaTwitter } from 'react-icons/fa'
+import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa'
 import { Link } from 'react-router'
 
 const Footer = memo(() => {

@@ -10,13 +10,14 @@ import Vector_4 from './../assets/images/Vector_4.svg'
 import Vector_5 from './../assets/images/Vector_5.svg' 
 import left from './../assets/images/left.svg'
 import right from './../assets/images/right.svg'
-import Programming_servie from './../assets/images/Programming_service.svg'
+
 import Testimonial from '../Components/Testimonial'
 import Footer from '../Components/Footer'
 import { Link } from 'react-router'
 import { useMediaQuery } from 'react-responsive'
 import { OurService } from '../Data/service'
-import { Swiper, SwiperSlide,useSwiper } from 'swiper/react'
+import { Swiper, SwiperSlide} from 'swiper/react'
+import SwiperCore from 'swiper';
 import { Navigation, Pagination, Scrollbar, A11y , EffectFade } from 'swiper/modules';
 // import StarRating from 'react-native-star-svg-rating';
 import 'swiper/css';
@@ -25,10 +26,13 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import 'swiper/css/effect-fade';
 
+
 const Services = memo(() => {
   const isTableOrMobile = useMediaQuery({query: '(max-width:768px)'})
-  const swiper = useSwiper();
-  const [swiperInstance, setSwiperInstance] = useState(null);
+//   const swiper = useSwiper();
+
+  const [swiperInstance, setSwiperInstance] = useState<SwiperCore | null>(null);
+
   return (
     <>
       <NavBar/>
@@ -121,7 +125,7 @@ const Services = memo(() => {
                     pagination={{ clickable: true }}
                     // width={100}
                     
-                    onSwiper={(swiper) => setSwiperInstance(swiper)}
+                    onSwiper={(Swiper) => setSwiperInstance(Swiper)}
                     onSlideChange={() => console.log('slide change')}
                     effect="flip"
                     

@@ -1,4 +1,4 @@
-import React, { memo } from 'react'
+import { memo } from 'react'
 import { BiSolidBadgeCheck } from "react-icons/bi";
 import Project from './../assets/images/Project.svg'
 import Cloud from "./../assets/images/Cloud.svg"

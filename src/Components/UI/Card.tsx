@@ -1,4 +1,4 @@
-import React, { memo } from 'react'
+import { memo } from 'react'
 import Button from './Button'
 import { CardInterface} from '../../Constants/Constants'
 import { FiChevronRight } from "react-icons/fi";

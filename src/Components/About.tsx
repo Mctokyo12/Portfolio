@@ -1,4 +1,4 @@
-import React, { memo } from 'react'
+import { memo } from 'react'
 import Button from './UI/Button'
 import { FiChevronRight } from "react-icons/fi";
 import { BsAward, BsCodeSlash } from 'react-icons/bs';

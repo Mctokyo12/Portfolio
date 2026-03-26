@@ -1,5 +1,5 @@
-import React, { memo, useState } from 'react'
-import { TestimonialData, Testimonials } from '../Data/Testimonial'
+import{ memo} from 'react'
+import { Testimonials } from '../Data/Testimonial'
 
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Pagination, Scrollbar, A11y , EffectFade } from 'swiper/modules';
@@ -12,7 +12,7 @@ import 'swiper/css/effect-fade';
 import { useMediaQuery } from 'react-responsive'
 
 const Testimonial = memo(() => {
-    const [rating, setRating] = useState(1);
+    
     const isTableOrMobile = useMediaQuery({query: '(max-width:768px)'})
   return (
     <div className='my-40 bg-gry/7 shadow z-10 '>

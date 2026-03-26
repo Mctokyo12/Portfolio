@@ -1,4 +1,4 @@
-import React, { memo } from 'react'
+import { memo } from 'react'
 import { ProjectData } from '../Data/work'
 import Button from './UI/Button'
 import { FiChevronRight } from "react-icons/fi";
@@ -7,7 +7,7 @@ const Work = memo(() => {
   return (
     <div>
         <div className='md:mx-37.5 mx-5'>
-            <div className='mb-18 md:w-[569px]'  data-aos="fade-down" data-aos-duration="2000">
+            <div className='mb-18 md:w-142.25'  data-aos="fade-down" data-aos-duration="2000">
                 <h3 className='heading_three text-primary'>The work that I realized</h3>
                 <span className='text-black heading_two dark:text-white text-justify'>The work we did that made our Client happy and satisfied</span>
             </div>

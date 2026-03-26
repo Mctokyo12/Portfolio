@@ -1,4 +1,4 @@
-import React, { memo } from 'react'
+import { memo } from 'react'
 import { FiArrowRight, FiMessageSquare } from 'react-icons/fi'
 import Button from './UI/Button'
 import Hero_Picture from './../assets/images/Hero_picture.svg';

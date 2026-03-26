@@ -1,4 +1,4 @@
-import React, { memo } from 'react'
+import { memo } from 'react'
 import { ServiceData } from '../Data/service'
 import Card from './UI/Card'
 

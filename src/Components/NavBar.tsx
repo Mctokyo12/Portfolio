@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { HiBars3BottomRight } from 'react-icons/hi2';
 import Button from './UI/Button';
 import { Link } from 'react-router';

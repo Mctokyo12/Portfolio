@@ -1,4 +1,4 @@
-import React, { memo } from 'react'
+import { memo } from 'react'
 import { CoreSkillInterface } from '../../Constants/Constants'
 
 const CoreSkill = memo(({ background, icon, title, content }: CoreSkillInterface) => {

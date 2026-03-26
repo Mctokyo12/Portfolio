@@ -1,4 +1,4 @@
-import React, { memo } from 'react'
+import { memo } from 'react'
 import NavBar from '../Components/NavBar'
 import Button from '../Components/UI/Button'
 import About_me from './../assets/images/About_me.png'
