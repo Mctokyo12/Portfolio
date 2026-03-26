@@ -30,7 +30,7 @@ const Contacts = memo(() => {
     
                         {state.succeeded ? <p className='text-primary font-semibold md:text-two text-[28px] '>Thank you for contacting us !!!</p> : 
 
-                            <form action="" onSubmit={handleSubmit} className='flex flex-col gap-4  bg-amber-200  '>
+                            <form action="" onSubmit={handleSubmit} className='flex flex-col gap-4  '>
                                 <div className='md:w-152.25'>
                                     <label htmlFor="" className='font-semibold text-xl float-left mb-2 text-black'>Your Name:</label>
                                     <input type="text" name='name' required className='bg-transparent p-3 border-2 border-gry outline-none w-full placeholder:text-gry placeholder:text-xl  rounded-sm' placeholder='Your Full Name'/>
